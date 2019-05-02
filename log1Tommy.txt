@@ -1,0 +1,5 @@
+Script started on 2019-05-02 07:38:24+0000
+root@nara:/home/nara# exit
+exit
+
+Script done on 2019-05-02 07:38:30+0000

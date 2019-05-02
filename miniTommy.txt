@@ -1,0 +1,471 @@
+Script started on 2019-05-02 07:28:14+0000
+root@nara:/home/nara# if c[K[Kconfig
+ens33: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:0c:29:86:8a:41  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2117  bytes 153054 (153.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2117  bytes 153054 (153.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@nara:/home/nara# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ]         DGRAM                    30139    /run/user/1000/systemd/notify
+unix  3      [ ]         DGRAM                    20626    /run/systemd/notify
+unix  11     [ ]         DGRAM                    20639    /run/systemd/journal/dev-log
+unix  9      [ ]         DGRAM                    20649    /run/systemd/journal/socket
+unix  2      [ ]         DGRAM                    20903    /run/systemd/journal/syslog
+unix  2      [ ]         DGRAM                    57654    
+unix  3      [ ]         STREAM     CONNECTED     30065    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     28461    
+unix  2      [ ]         DGRAM                    30090    
+unix  3      [ ]         STREAM     CONNECTED     25578    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    29948    
+unix  3      [ ]         STREAM     CONNECTED     27144    /var/run/openvswitch/db.sock
+unix  3      [ ]         STREAM     CONNECTED     28416    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25815    
+unix  3      [ ]         STREAM     CONNECTED     40131    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     27409    
+unix  3      [ ]         STREAM     CONNECTED     21724    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25081    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25393    
+unix  3      [ ]         STREAM     CONNECTED     28462    /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    57959    
+unix  3      [ ]         STREAM     CONNECTED     26207    
+unix  3      [ ]         STREAM     CONNECTED     25664    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     57679    /var/run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    57499    
+unix  3      [ ]         STREAM     CONNECTED     27411    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    60023    
+unix  3      [ ]         DGRAM                    57500    
+unix  2      [ ]         DGRAM                    30076    
+unix  3      [ ]         STREAM     CONNECTED     25687    
+unix  3      [ ]         STREAM     CONNECTED     28415    
+unix  3      [ ]         STREAM     CONNECTED     30063    
+unix  3      [ ]         STREAM     CONNECTED     26706    
+unix  3      [ ]         STREAM     CONNECTED     27952    
+unix  3      [ ]         STREAM     CONNECTED     57676    
+unix  3      [ ]         STREAM     CONNECTED     40130    
+unix  3      [ ]         STREAM     CONNECTED     26391    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     25662    
+unix  3      [ ]         STREAM     CONNECTED     27956    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     27142    
+unix  3      [ ]         STREAM     CONNECTED     25394    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25076    
+unix  3      [ ]         DGRAM                    57830    
+unix  3      [ ]         STREAM     CONNECTED     57479    
+unix  3      [ ]         DGRAM                    57502    
+unix  3      [ ]         STREAM     CONNECTED     25938    
+unix  3      [ ]         STREAM     CONNECTED     57630    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     57503    
+unix  2      [ ]         DGRAM                    26776    
+unix  3      [ ]         STREAM     CONNECTED     57504    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     60139    
+unix  2      [ ]         DGRAM                    52506    
+unix  2      [ ]         DGRAM                    53750    
+unix  3      [ ]         STREAM     CONNECTED     24919    
+unix  2      [ ]         DGRAM                    57825    
+unix  3      [ ]         DGRAM                    57831    
+unix  2      [ ]         DGRAM                    26225    
+unix  3      [ ]         STREAM     CONNECTED     21346    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    26358    
+unix  3      [ ]         DGRAM                    57501    
+unix  3      [ ]         STREAM     CONNECTED     57361    /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    27134    
+unix  2      [ ]         DGRAM                    28591    
+unix  3      [ ]         STREAM     CONNECTED     26387    
+unix  3      [ ]         STREAM     CONNECTED     60140    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     26707    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     26388    
+unix  3      [ ]         STREAM     CONNECTED     52505    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    20627    
+unix  3      [ ]         STREAM     CONNECTED     52503    
+unix  3      [ ]         STREAM     CONNECTED     21723    
+unix  3      [ ]         STREAM     CONNECTED     57796    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    52510    
+unix  3      [ ]         STREAM     CONNECTED     20691    
+unix  3      [ ]         STREAM     CONNECTED     57795    
+unix  3      [ ]         STREAM     CONNECTED     25816    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    20628    
+unix  2      [ ]         DGRAM                    57492    
+unix  3      [ ]         STREAM     CONNECTED     26209    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24920    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    57829    
+unix  3      [ ]         STREAM     CONNECTED     57629    
+unix  3      [ ]         DGRAM                    57696    
+unix  3      [ ]         STREAM     CONNECTED     26392    /var/run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    30140    
+unix  2      [ ]         DGRAM                    53732    
+unix  3      [ ]         STREAM     CONNECTED     57480    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    26386    
+unix  3      [ ]         DGRAM                    57828    
+unix  3      [ ]         DGRAM                    52511    
+unix  3      [ ]         STREAM     CONNECTED     25572    
+unix  3      [ ]         STREAM     CONNECTED     57360    
+unix  3      [ ]         DGRAM                    57697    
+unix  3      [ ]         DGRAM                    30141    
+unix  2      [ ]         DGRAM                    25444    
+root@nara:/home/nara# mininet
+mininet: command not found
+root@nara:/home/nara# mn
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 
+*** Adding switches:
+s1 
+*** Adding links:
+(h1, s1) (h2, s1) 
+*** Configuring hosts
+h1 h2 
+*** Starting controller
+c0 
+*** Starting 1 switches
+s1 ...
+*** Starting CLI:
+mininet> exit
+*** Stopping 1 controllers
+c0 
+*** Stopping 2 links
+..
+*** Stopping 1 switches
+s1 
+*** Stopping 2 hosts
+h1 h2 
+*** Done
+completed in 7.810 seconds
+root@nara:/home/nara# ifn[Kconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::20c:29ff:fe86:8a41  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:86:8a:41  txqueuelen 1000  (Ethernet)
+        RX packets 74  bytes 10338 (10.3 KB)
+        RX errors 0  dropped 15  overruns 0  frame 0
+        TX packets 14  bytes 2366 (2.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2334  bytes 169970 (169.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2334  bytes 169970 (169.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@nara:/home/nara# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.44.1.6  netmask 255.255.255.0  broadcast 10.44.1.255
+        inet6 fe80::20c:29ff:fe86:8a41  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:86:8a:41  txqueuelen 1000  (Ethernet)
+        RX packets 151  bytes 20563 (20.5 KB)
+        RX errors 0  dropped 26  overruns 0  frame 0
+        TX packets 19  bytes 3224 (3.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2334  bytes 169970 (169.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2334  bytes 169970 (169.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@nara:/home/nara# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 localhost.localdom:6653 localhost.localdo:38022 TIME_WAIT  
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ]         DGRAM                    30139    /run/user/1000/systemd/notify
+unix  3      [ ]         DGRAM                    20626    /run/systemd/notify
+unix  11     [ ]         DGRAM                    20639    /run/systemd/journal/dev-log
+unix  9      [ ]         DGRAM                    20649    /run/systemd/journal/socket
+unix  2      [ ]         DGRAM                    20903    /run/systemd/journal/syslog
+unix  2      [ ]         DGRAM                    57654    
+unix  3      [ ]         STREAM     CONNECTED     30065    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     28461    
+unix  2      [ ]         DGRAM                    30090    
+unix  3      [ ]         STREAM     CONNECTED     25578    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    29948    
+unix  3      [ ]         STREAM     CONNECTED     27144    /var/run/openvswitch/db.sock
+unix  3      [ ]         STREAM     CONNECTED     28416    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25815    
+unix  3      [ ]         STREAM     CONNECTED     40131    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     27409    
+unix  3      [ ]         STREAM     CONNECTED     21724    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25081    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25393    
+unix  3      [ ]         STREAM     CONNECTED     28462    /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    57959    
+unix  3      [ ]         STREAM     CONNECTED     26207    
+unix  3      [ ]         STREAM     CONNECTED     25664    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     57679    /var/run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    57499    
+unix  3      [ ]         STREAM     CONNECTED     27411    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    60023    
+unix  3      [ ]         DGRAM                    57500    
+unix  2      [ ]         DGRAM                    30076    
+unix  3      [ ]         STREAM     CONNECTED     25687    
+unix  3      [ ]         STREAM     CONNECTED     28415    
+unix  3      [ ]         STREAM     CONNECTED     30063    
+unix  3      [ ]         STREAM     CONNECTED     26706    
+unix  3      [ ]         STREAM     CONNECTED     27952    
+unix  3      [ ]         STREAM     CONNECTED     57676    
+unix  3      [ ]         STREAM     CONNECTED     40130    
+unix  3      [ ]         STREAM     CONNECTED     26391    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     25662    
+unix  3      [ ]         STREAM     CONNECTED     27956    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     27142    
+unix  3      [ ]         STREAM     CONNECTED     25394    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25076    
+unix  3      [ ]         DGRAM                    57830    
+unix  3      [ ]         STREAM     CONNECTED     57479    
+unix  3      [ ]         DGRAM                    57502    
+unix  3      [ ]         STREAM     CONNECTED     25938    
+unix  3      [ ]         STREAM     CONNECTED     57630    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     57503    
+unix  2      [ ]         DGRAM                    26776    
+unix  3      [ ]         STREAM     CONNECTED     57504    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     60139    
+unix  2      [ ]         DGRAM                    52506    
+unix  2      [ ]         DGRAM                    53750    
+unix  3      [ ]         STREAM     CONNECTED     24919    
+unix  2      [ ]         DGRAM                    57825    
+unix  3      [ ]         DGRAM                    57831    
+unix  2      [ ]         DGRAM                    26225    
+unix  3      [ ]         STREAM     CONNECTED     21346    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    26358    
+unix  3      [ ]         DGRAM                    57501    
+unix  3      [ ]         STREAM     CONNECTED     57361    /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    27134    
+unix  2      [ ]         DGRAM                    28591    
+unix  3      [ ]         STREAM     CONNECTED     26387    
+unix  3      [ ]         STREAM     CONNECTED     60140    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     26707    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     26388    
+unix  3      [ ]         STREAM     CONNECTED     52505    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    20627    
+unix  3      [ ]         STREAM     CONNECTED     52503    
+unix  3      [ ]         STREAM     CONNECTED     21723    
+unix  3      [ ]         STREAM     CONNECTED     57796    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    52510    
+unix  3      [ ]         STREAM     CONNECTED     20691    
+unix  3      [ ]         STREAM     CONNECTED     57795    
+unix  3      [ ]         STREAM     CONNECTED     25816    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    20628    
+unix  2      [ ]         DGRAM                    57492    
+unix  3      [ ]         STREAM     CONNECTED     26209    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24920    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    57829    
+unix  3      [ ]         STREAM     CONNECTED     57629    
+unix  3      [ ]         DGRAM                    57696    
+unix  3      [ ]         STREAM     CONNECTED     26392    /var/run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    30140    
+unix  2      [ ]         DGRAM                    53732    
+unix  3      [ ]         STREAM     CONNECTED     57480    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    26386    
+unix  3      [ ]         DGRAM                    57828    
+unix  3      [ ]         DGRAM                    52511    
+unix  3      [ ]         STREAM     CONNECTED     25572    
+unix  3      [ ]         STREAM     CONNECTED     57360    
+unix  3      [ ]         DGRAM                    57697    
+unix  3      [ ]         DGRAM                    30141    
+unix  2      [ ]         DGRAM                    25444    
+root@nara:/home/nara# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:86:8a:41 brd ff:ff:ff:ff:ff:ff
+    inet 10.44.1.6/24 brd 10.44.1.255 scope global dynamic ens33
+       valid_lft 572sec preferred_lft 572sec
+    inet6 fe80::20c:29ff:fe86:8a41/64 scope link 
+       valid_lft forever preferred_lft forever
+root@nara:/home/nara# ip anetstatifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.44.1.6  netmask 255.255.255.0  broadcast 10.44.1.255
+        inet6 fe80::20c:29ff:fe86:8a41  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:86:8a:41  txqueuelen 1000  (Ethernet)
+        RX packets 158  bytes 21403 (21.4 KB)
+        RX errors 0  dropped 33  overruns 0  frame 0
+        TX packets 20  bytes 3294 (3.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2334  bytes 169970 (169.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2334  bytes 169970 (169.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@nara:/home/nara# d[Kls
+[0m[01;34mmininet[0m  miniTommy.txt  [01;34moflops[0m  [01;34moftest[0m  [01;34mopenflow[0m  [01;34mpox[0m  timemini.txt
+root@nara:/home/nara# git --version
+git version 2.17.1
+root@nara:/home/nara# mn 0[K-h
+Usage: mn [options]
+(type mn -h for details)
+
+The mn utility creates Mininet network from the command line. It can create
+parametrized topologies, invoke the Mininet CLI, and run tests.
+
+Options:
+  -h, --help            show this help message and exit
+  --switch=SWITCH       default|ivs|lxbr|ovs|ovsbr|ovsk|user[,param=value...]
+                        ovs=OVSSwitch default=OVSSwitch ovsk=OVSSwitch
+                        lxbr=LinuxBridge user=UserSwitch ivs=IVSSwitch
+                        ovsbr=OVSBridge
+  --host=HOST           cfs|proc|rt[,param=value...]
+                        rt=CPULimitedHost{'sched': 'rt'} proc=Host
+                        cfs=CPULimitedHost{'sched': 'cfs'}
+  --controller=CONTROLLER
+                        default|none|nox|ovsc|ref|remote|ryu[,param=value...]
+                        ovsc=OVSController none=NullController
+                        remote=RemoteController default=DefaultController
+                        nox=NOX ryu=Ryu ref=Controller
+  --link=LINK           default|ovs|tc|tcu[,param=value...] default=Link
+                        ovs=OVSLink tcu=TCULink tc=TCLink
+  --topo=TOPO           linear|minimal|reversed|single|torus|tree[,param=value
+                        ...] linear=LinearTopo torus=TorusTopo tree=TreeTopo
+                        single=SingleSwitchTopo
+                        reversed=SingleSwitchReversedTopo minimal=MinimalTopo
+  -c, --clean           clean and exit
+  --custom=CUSTOM       read custom classes or params from .py file(s)
+  --test=TEST           none|build|all|iperf|pingpair|iperfudp|pingall
+  -x, --xterms          spawn xterms for each node
+  -i IPBASE, --ipbase=IPBASE
+                        base IP address for hosts
+  --mac                 automatically set host MACs
+  --arp                 set all-pairs ARP entries
+  -v VERBOSITY, --verbosity=VERBOSITY
+                        info|warning|critical|error|debug|output
+  --innamespace         sw and ctrl in namespace?
+  --listenport=LISTENPORT
+                        base port for passive switch listening
+  --nolistenport        don't use passive listening port
+  --pre=PRE             CLI script to run before tests
+  --post=POST           CLI script to run after tests
+  --pin                 pin hosts to CPU cores (requires --host cfs or --host
+                        rt)
+  --nat                 [option=val...] adds a NAT to the topology that
+                        connects Mininet hosts to the physical network.
+                        Warning: This may route any traffic on the machine
+                        that uses Mininet's IP subnet into the Mininet
+                        network. If you need to change Mininet's IP subnet,
+                        see the --ipbase option.
+  --version             prints the version and exits
+  --cluster=server1,server2...
+                        run on multiple servers (experimental!)
+  --placement=block|random
+                        node placement for --cluster (experimental!)
+root@nara:/home/nara# wireshark &
+[1] 39693
+root@nara:/home/nara# QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+qt.qpa.screen: QXcbConnection: Could not connect to display 
+Could not connect to any X display.
+of
+of: command not found
+[1]+  Exit 1                  wireshark
+[1]+  Exit 1                  wireshark
+root@nara:/home/nara# mn
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 
+*** Adding switches:
+s1 
+*** Adding links:
+(h1, s1) (h2, s1) 
+*** Configuring hosts
+h1 h2 
+*** Starting controller
+c0 
+*** Starting 1 switches
+s1 ...
+*** Starting CLI:
+mininet> help
+
+Documented commands (type help <topic>):
+========================================
+EOF    gterm  iperfudp  nodes        pingpair      py      switch
+dpctl  help   link      noecho       pingpairfull  quit    time  
+dump   intfs  links     pingall      ports         sh      x     
+exit   iperf  net       pingallfull  px            source  xterm 
+
+You may also send a command to a node using:
+  <node> command {args}
+For example:
+  mininet> h1 ifconfig
+
+The interpreter automatically substitutes IP addresses
+for node names when a node is the first arg, so commands
+like
+  mininet> h2 ping h3
+should work.
+
+Some character-oriented interactive commands require
+noecho:
+  mininet> noecho h2 vi foo.py
+However, starting up an xterm/gterm is generally better:
+  mininet> xterm h2
+
+mininet> nodes
+available nodes are: 
+c0 h1 h2 s1
+mininet> net
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s1-eth2
+s1 lo:  s1-eth1:h1-eth0 s1-eth2:h2-eth0
+c0
+mininet> dump
+<Host h1: h1-eth0:10.0.0.1 pid=39723> 
+<Host h2: h2-eth0:10.0.0.2 pid=39725> 
+<OVSSwitch s1: lo:127.0.0.1,s1-eth1:None,s1-eth2:None pid=39730> 
+<Controller c0: 127.0.0.1:6653 pid=39716> 
+mininet> exit
+*** Stopping 1 controllers
+c0 
+*** Stopping 2 links
+..
+*** Stopping 1 switches
+s1 
+*** Stopping 2 hosts
+h1 h2 
+*** Done
+completed in 36.496 seconds
+root@nara:/home/nara# scrip[Kpt --timing=time1tommy.txt time1Tommy.txt
+Script started, file is time1Tommy.txt
+root@nara:/home/nara# ~exit
+exit
+Script done, file is time1Tommy.txt
+root@nara:/home/nara# script --timing=time1tommy.txt time1Tommy.txt[C[1P1Tommy.txt[1P1Tommy.txt[1P1Tommy.txt[1P1Tommy.txtl1Tommy.txto1Tommy.txtk1Tommy.txt
+Script started, file is lok1Tommy.txt
+root@nara:/home/nara# exit
+exit
+Script done, file is lok1Tommy.txt
+root@nara:/home/nara# script --timing=time1tommy.txt lok1Tommy.txt[C[C[1P1Tommy.txth1Tommy.txt[1P1Tommy.txtg1Tommy.txt
+Script started, file is log1Tommy.txt
+root@nara:/home/nara# exit
+exit
+Script done, file is log1Tommy.txt
+root@nara:/home/nara# exit
+exit
+
+Script done on 2019-05-02 07:38:32+0000
